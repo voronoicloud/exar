@@ -7,16 +7,15 @@ body {
 
 
 model-viewer {
-  width: 80%;
-  height: 100%; /* Ensures it takes 50% of the screen height */
+  width: 50%;
+  height: 80%; /* Ensures it takes 50% of the screen height */
   min-height: 1500px; /* Sets a minimum height of 300px */
-  max-width: 2500px; /* Sets a maximum width of 800px */
+  max-width: 1500px; /* Sets a maximum width of 800px */
   margin: 20px 0;
   top: 0px;
   background-color: black;
   flex-shrink: 0; /* Prevents shrinking of the model-viewer */
   z-index: 1;
-  position: absolute;
 
 }
 
@@ -30,7 +29,7 @@ model-viewer {
 }
 
 .info {
-  font-size: 18pt;
+  font-size: 12pt;
   background: blue;
   z-index: 2;
   overflow: scroll;
@@ -54,7 +53,7 @@ model-viewer {
 }
 
 .ov {
-  font-size: 30pt;
+  font-size: 18pt;
   line-height: -10pt;
 }
 
@@ -79,17 +78,9 @@ model-viewer {
         z-index: 1; /* hinter den Inhalt legen */
       }
 
-.gradient{
-  z-index: 3;
-  pointer-events: none;
-  bottom: 0;
-  width: auto;
-  position: inherit;
-}
-
     @media (max-width: 800px) {
       #draggable {
-            width: 50%;
+            width: 80%;
             height: 20%;
             margin-left: 5px;
             background-color: blue;
@@ -99,8 +90,12 @@ model-viewer {
             cursor: grab;
           }
 
-          .info {
+          .ov {
             font-size: 10pt;
+          }
+
+          .info {
+            font-size: 8pt;
             background: blue;
             z-index: 2;
             overflow: hidden;
