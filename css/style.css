@@ -1,0 +1,48 @@
+body {
+  font-family: "Times", serif;
+  background: black;
+  color: white;
+  font-size: 100pt;
+}
+
+
+model-viewer {
+  width: 80%;
+  height: 50%; /* Ensures it takes 50% of the screen height */
+  min-height: 300px; /* Sets a minimum height of 300px */
+  max-width: 1500px; /* Sets a maximum width of 800px */
+  margin: 20px 0;
+  background-color: black;
+  flex-shrink: 0; /* Prevents shrinking of the model-viewer */
+  z-index: 1;
+}
+
+.info {
+  font-size: 18pt;
+  background: blue;
+  z-index: 2;
+  overflow: hidden;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+
+
+
+h3 {
+  font-size: 20pt;
+
+}
+
+
+
+
+#draggable {
+      width: 700px;
+      height: 200px;
+      margin-left: 5px;
+      background-color: blue;
+      position: absolute;
+      top: 60vh;
+      left: 30%;
+      cursor: grab;
+    }
