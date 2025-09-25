@@ -67,7 +67,20 @@ model-viewer {
       left: 10%;
       cursor: grab;
     }
+button {
+  width: 100%;
+  height: 50px;
+  background: blue;
+  font-size: 20pt;
+  color: white;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  position: fixed;
+  display: block;
+  border-style: none;
 
+}
 
     #bg {
         position: fixed;
