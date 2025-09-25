@@ -9,19 +9,18 @@ body {
 model-viewer {
   width: 50%;
   height: 80%; /* Ensures it takes 50% of the screen height */
-  min-height: 1500px; /* Sets a minimum height of 300px */
-  max-width: 1500px; /* Sets a maximum width of 800px */
+  min-height: 300px; /* Sets a minimum height of 300px */
+  max-width: 800px; /* Sets a maximum width of 800px */
   margin: 20px 0;
   top: 0px;
   background-color: black;
   flex-shrink: 0; /* Prevents shrinking of the model-viewer */
-  z-index: 1;
 
 }
 
 .cursor {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   right: 8px;
   top:10px;
   pointer-events: none;
@@ -29,7 +28,7 @@ model-viewer {
 }
 
 .info {
-  font-size: 12pt;
+  font-size: 10pt;
   background: blue;
   z-index: 2;
   overflow: scroll;
@@ -48,12 +47,13 @@ model-viewer {
 }
 
 .content {
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
 
 .ov {
-  font-size: 18pt;
+  font-size: 12pt;
   line-height: -10pt;
 }
 
