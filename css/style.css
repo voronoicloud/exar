@@ -84,7 +84,7 @@ model-viewer {
   pointer-events: none;
   bottom: 0;
   width: auto;
-  position: fixed;
+  position: inherit;
 }
 
     @media (max-width: 800px) {
