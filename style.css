@@ -79,6 +79,13 @@ model-viewer {
         z-index: 1; /* hinter den Inhalt legen */
       }
 
+.gradient{
+  z-index: 3;
+  pointer-events: none;
+  bottom: 0;
+  width: auto;
+  position: inherit;
+}
 
     @media (max-width: 800px) {
       #draggable {
