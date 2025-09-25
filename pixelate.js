@@ -11,7 +11,7 @@ window.addEventListener("resize", resize);
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  const blockSize = 1;     // Pixelblock-Größe
+  const blockSize = 3;     // Pixelblock-Größe
   const border = 100;      // Höhe des Streubereichs
   const randomness = 0.8;  // Unregelmäßigkeit
 
